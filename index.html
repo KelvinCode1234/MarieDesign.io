@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="Fashion designer.png">
+    <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+    <title>MarieDesign.com</title>
+</head>
+<body>  
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar() class="icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="29" viewBox="0 -960 960 960" width="29" fill="#914F1E"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#features">Feature</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Form.html">Contact</a></li>
+        </ul>  
+        <ul>
+            <h5><span>Marie</span> <i class="fa-solid fa-scissors"></i> <span>Design</span></h5>   
+            <li class="hideOnMobile"><a href="#home">Home</a></li>
+            <li class="hideOnMobile"><a href="#service">Service</a></li>
+            <li class="hideOnMobile"><a href="#features">Feature</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile"><a href="Form.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar() class="icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="29" viewBox="0 -960 960 960" width="29" fill="#914F1E"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>       
+    </nav>
+
+    <style>
+        #welcomeMessage {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffc69b;
+            padding: 20px;
+            border: 1px solid #ffc69b;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 999;
+        }
+         
+        #welcomeMessage p {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+
+        } 
+
+        #closeBtn {
+            cursor: pointer;
+            color: whitesmoke;
+            border: none;
+            background: rgb(185, 2, 2);
+            width: 60px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        #closeBtn:hover {
+            background-color: darkred;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="welcomeMessage">
+    <p>Welcome to Marie <span>&#9986;</span> Design 🎉🎉</p>
+    <button id="closeBtn">Close</button>
+</div>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    var welcomeMessage = document.getElementById("welcomeMessage");
+    var closeBtn = document.getElementById("closeBtn");
+
+    // Set a timeout to display the welcome message after 5 seconds (5000 milliseconds)
+    setTimeout(function() {
+        welcomeMessage.style.display = "block";
+    }, 5000);
+
+    closeBtn.addEventListener("click", function() {
+        welcomeMessage.style.display = "none";
+    });
+});
+
+    
+</script>
+
+    <!--------------home------------->
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="home-col-1">
+                    <img src="Fashion designer - Copy.png" loading="eager">
+                </div>
+                <div class="home-col-2">
+                    <h2 class="sub-title">Precision & Style: Custom Tailoring for Your Unique Look</h1>
+                        <p>At <strong>Marie <span>&#9986;</span> Design</strong>, we blend tradition with innovation, offering bespoke tailoring services that matches your style and fit perfectly.<br> Also,  ensuring your vision comes to life with precision and passion. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------Service------------->
+    <div id="service">
+        <div class="container">
+            <div class="row">
+                <div class="service-col-1">
+                    <img src="A-girl-tailoring.png" loading="eager">
+                </div>
+                <div class="service-col-2">
+                    <h2 class="sub-title">Tailoring Perfection</h2>
+                    <p>As a <em>Fashion Designer</em> i am committed to providing you with styles that exemplify elegance and unmatched craftsmanship.<br> also specialize in creating custom pieces that cater to your unique style and preferences. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Skills and Best Practices</span><br>My skills include trend analysis, pattern making, draping, and sewing.<br>I stay updated with the latest fashion trends and technologies, and I'm committed to sustainable and ethical fashion practices, ensuring that my designs are'nt only beautiful but also environmentally responsible.</li>                       
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Experience</span><br>As a <em>Fashion Designer</em>, I have extensive experience in creating innovative and trend-setting clothing lines and accessories for various brands and individual clients.</li>
+                            <li><span>Fashion Design</span><br>I have developed and brought to life unique design concepts, using a wide range of materials and techniques. <br> My expertise includes sketching, fabric selection, and garment construction, ensuring each piece is both stylish and functional.</li>
+                            <li><span>Collections</span><br>My collections include seasonal lines, bridal wear, and custom haute couture pieces. Each collection has been showcased in fashion shows and received accolades for its creativity and craftsmanship.</li>
+                        </ul>
+                    </div>   
+                    <div class="info">
+                        <h4>4+<br><p>Experience</p></h4>
+                        <h4>350+<br><p>Project</p></h4>
+                        <h4>3.0<br><p>Review</p></h4>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Gallery------------>
+    <div id="features">
+        <div class="container">
+            <h2 class="collection-1">Our Features</h2>
+            <p>At <strong>Marie <span>&#9986;</span> Design, </strong> we offer a range of services to meet all your tailoring needs.<br> Below provide some exceptional Fashion Qualities and Styles.</p>
+            <div class="img-row">
+                <div class="style">
+                    <h2>Ankara</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade mySlidesAnkara">
+                            <img src="Ankara.png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAnkara">
+                            <img src="Ankara(2).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAnkara">
+                            <img src="Ankara(6).jpg" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAnkara">
+                            <img src="Ankara(4).jpg" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAnkara">
+                            <img src="Ankara(5).png" loading="eager">
+                        </div>
+                    </div>
+                </div>
+                <div class="style">
+                    <h2>Aso-Ebi</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade mySlidesAsoOke">
+                            <img src="Aso-oke(3).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAsoOke">
+                            <img src="Aso-oke(4).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAsoOke">
+                            <img src="Aso-ebi(5).jpg" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAsoOke">
+                            <img src="Aso-ebi(6).jpg" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesAsoOke">
+                            <img src="Aso-oke(2).jpg" loading="eager">
+                        </div>
+                    </div>
+                </div>
+                <div class="style">
+                    <h2>Gown</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade mySlidesGown">
+                            <img src="Gown.png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesGown">
+                            <img src="Gown(2).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesGown">
+                            <img src="Gown(3).jpg" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesGown">
+                            <img src="Gown(4).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesGown">
+                            <img src="Gown(5).png" loading="eager">
+                        </div>
+                    </div>
+                </div>
+                <div class="style">
+                    <h2>BuBu</h2>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade mySlidesbuBu">
+                            <img src="bubu.png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesbuBu">
+                            <img src="bubu(2).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesbuBu">
+                            <img src="bubu(3).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesbuBu">
+                            <img src="bubu(4).png" loading="eager">
+                        </div>
+                        <div class="mySlides fade mySlidesbuBu">
+                            <img src="bubu(5).png" loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="collection-2"><h3><mark><a href="https://www.pinterest.com/search/pins/?q=African%20ladies%20clothing%20styles&rs=typed">Explore More Unique Styles</a></mark></h3></div>
+    </div>
+   <!-----------------About Me----------------------->    
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Wats_3.png" loading="eager">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Profile</h2>
+                       <p>I’m <em>"Ajaba Mav-Marie"</em> a clothing designer deeply inspired by Africa’s rich heritage. <br> My designs blend traditional craftsmanship with modern fashion, creating pieces that honor our cultural roots and celebrate sustainability. <br>Each creation is a reflection of Africa’s vibrant spirit and artistic legacy.</p>               
+                        <div class="container">
+                                <div id="info">
+                                    <h2 class="sub-title">Info</h2>
+                                    <p><i class="fa-solid fa-envelope"></i>ajabamarie@gmail.com</p>
+                                    <p><i class="fa-solid fa-square-phone"></i>+234 707 247 6859</p>
+                                    <div class="social-icons">
+                                      <a href="https://www.tiktok.com/@mavmarie?_t=8oL8ncBjQzF&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                                      <a href="https://wa.me/+2348141943086"><i class="fa-brands fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                </div>     
+            </div>
+        </div>
+    </div>   
+    <footer>
+        Copyright &copy 2024 | All right reserved
+    </footer>   
+    <script src="script.js"></script>
+     
+    <script>
+
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+ 
+</body>
+</html>

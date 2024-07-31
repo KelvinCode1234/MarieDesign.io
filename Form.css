@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background: #F7DCB9;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img {
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #914F1E;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #914F1E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 800;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 150px;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ffcf91;
+}
+
+.contact-inputs::placeholder {
+    color: #666;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 19px;
+    font-family: monospace;
+    font-weight: 800;
+    color: #914F1E;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #ffcf91;
+    cursor: pointer;
+}
+
+.contact-left i {
+    font-size: 15px;
+}
+
+
+/*--950px screen----------*/
+@media (max-width:950px) {
+    .contact-left-title {
+        margin-left: 28px;
+        width: 85%;
+    }
+    .contact-inputs{
+        width: 50vw;
+        margin-left: 28px;
+    }
+    .contact-right img {
+        width: 91%;
+        margin-left: 25px;
+    }
+    button {
+        width: 30%;
+        margin-left: 28px;
+    }
+    
+}
+
+/*--500px screen----------*/
+@media (max-width:500px) {
+    *{
+        overflow-x: auto;
+    }
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right img {
+        display: none;
+    }
+    button {
+        width: 50%;
+        margin-left: 25px;
+    }
+
+}
+
+
+
+
