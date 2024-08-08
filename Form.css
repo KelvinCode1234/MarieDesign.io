@@ -29,6 +29,7 @@ img {
 }
 
 .contact-left-title h2 {
+    font-family: cursive;
     font-weight: 600;
     color: #914F1E;
     font-size: 40px;
@@ -36,7 +37,7 @@ img {
 }
 .contact-left-title hr{
     border: none;
-    width: 120px;
+    width: 100px;
     height: 5px;
     background-color: #914F1E;
     border-radius: 10px;
@@ -51,6 +52,7 @@ img {
     font-weight: 800;
     color: #666;
     border-radius: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .contact-left textarea {
@@ -59,10 +61,11 @@ img {
     border-radius: 20px;
     font-weight: 800;
     font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .contact-inputs:focus{
-    border: 2px solid #ffcf91;
+    border: 2px solid #ffc67b;
 }
 
 .contact-inputs::placeholder {
@@ -74,7 +77,7 @@ img {
     align-items: center;
     padding: 15px 30px;
     font-size: 19px;
-    font-family: monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 800;
     color: #914F1E;
     gap: 10px;
@@ -122,8 +125,14 @@ img {
         display: none;
     }
     button {
-        width: 50%;
+        font-size: 25px;
+        width: 46%;
         margin-left: 25px;
+    }
+    .contact-left i {
+        font-size: 15px;
+        display: inline;
+        margin-bottom: -2px;
     }
 
 }

@@ -46,7 +46,7 @@
         }
          
         #welcomeMessage p {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 500;
             margin-bottom: 15px;
 
@@ -71,7 +71,7 @@
 <body>
 
 <div id="welcomeMessage">
-    <p>Welcome to Marie <span>&#9986;</span> Design 🎉🎉</p>
+    <p>Welcome to Marie <span>&#9986;</span> Design 🎉<br>"Where Style Meets Elegance"</p>
     <button id="closeBtn">Close</button>
 </div>
 
@@ -262,20 +262,33 @@
         </div>
     </div>   
     <footer>
-        Copyright &copy 2024 | All right reserved
+        Copyright &copy 2024 | All Right Reserved
     </footer>   
     <script src="script.js"></script>
      
     <script>
 
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
+
+function hideSidebarOnLinkClick() {
+    const sidebar = document.querySelector('.sidebar');
+    const links = sidebar.querySelectorAll('a');
+    
+    links.forEach(link => {
+        link.addEventListener('click', hideSidebar);
+    });
+}
+
+// Call this function to set up the event listeners when the page loads
+document.addEventListener('DOMContentLoaded', hideSidebarOnLinkClick);
 
     </script>
  
